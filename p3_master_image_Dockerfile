@@ -21,17 +21,21 @@ RUN apt-get update
 #
 RUN apt-get install -y wget vim htop fish datamash graphviz libgraphviz-dev ffmpeg
 
+RUN pip3 --no-cache-dir install --upgrade pip
+
 RUN pip3 --no-cache-dir install ipython pandas numpy jupyter
 
-RUN pip3 --no-cache-dir install docopt joblib natsort scipy
+RUN pip3 --no-cache-dir install docopt joblib natsort scipy 
 
-RUN pip3 --no-cache-dir install tqdm matplotlib librosa scikit-learn
+RUN pip3 --no-cache-dir install tqdm matplotlib librosa scikit-learn ffmpeg
 
-RUN pip3 --no-cache-dir install cmake dlib ffmpeg funcsigs h5py imageio 
-
-RUN pip3 --no-cache-dir install json5 Keras Keras-Applications Keras-Preprocessing opencv-python Pillow pydub
+RUN pip3 --no-cache-dir install h5py imageio opencv-python Pillow 
 
 RUN pip3 --no-cache-dir install scikit-image scikit-learn scikit-video scipy seaborn six sk-video
+
+RUN pip3 --no-cache-dir install cmake dlib funcsigs pydub
+
+RUN pip3 --no-cache-dir install json5 Keras Keras-Applications Keras-Preprocessing 
 
 RUN pip3 --no-cache-dir install dill bleach namedtupled
 
@@ -41,7 +45,7 @@ RUN pip3 --no-cache-dir install torch torchvision pytorch-transformers seqeval==
 
 RUN pip3 --no-cache-dir install networkx pathlib pygraphviz
 
-RUN pip3 --no-cache-dir install wheel==0.23.0 Yarg==0.1.9 docopt==0.6.2
+RUN pip3 --no-cache-dir install Yarg==0.1.9 docopt==0.6.2
 
 RUN pip3 --no-cache-dir install nvgpu pipreqs
 
