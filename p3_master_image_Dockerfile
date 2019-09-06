@@ -19,11 +19,11 @@ LABEL description="Tensorflow + some other libraries"
 RUN apt-get update
 
 #
-RUN apt-get install -y wget vim htop fish datamash graphviz libgraphviz-dev ffmpeg zsh tmux
+RUN apt-get install -y wget vim htop fish datamash graphviz libgraphviz-dev ffmpeg zsh tmux cmake
 
 RUN pip3 --no-cache-dir install --upgrade pip
 
-RUN pip3 --no-cache-dir install ipython pandas numpy jupyter
+RUN pip3 --no-cache-dir install ipython pandas numpy jupyter cmake
 
 RUN pip3 --no-cache-dir install docopt joblib natsort scipy 
 
@@ -33,7 +33,7 @@ RUN pip3 --no-cache-dir install h5py imageio opencv-python Pillow
 
 RUN pip3 --no-cache-dir install scikit-image scikit-learn scikit-video scipy seaborn six sk-video
 
-RUN pip3 --no-cache-dir install cmake dlib funcsigs pydub
+RUN pip3 --no-cache-dir install dlib funcsigs pydub
 
 RUN pip3 --no-cache-dir install json5 Keras Keras-Applications Keras-Preprocessing 
 
