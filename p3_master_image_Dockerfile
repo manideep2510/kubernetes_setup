@@ -47,7 +47,7 @@ RUN pip3 --no-cache-dir install networkx pathlib pygraphviz
 
 RUN pip3 --no-cache-dir install Yarg==0.1.9 docopt==0.6.2
 
-RUN pip3 --no-cache-dir install nvgpu pipreqs asyncio hangups
+RUN pip3 --no-cache-dir install nvgpu pipreqs asyncio hangups fbchat
 
 RUN apt-get install -y git
 
