@@ -20,6 +20,8 @@ RUN apt-get update
 #
 RUN apt-get install -y wget vim htop fish datamash graphviz libgraphviz-dev ffmpeg zsh tmux cmake
 
+RUN apt-get install -y python3-venv
+
 RUN pip3 --no-cache-dir install --upgrade pip
 
 RUN pip3 --no-cache-dir install ipython pandas numpy jupyter cmake
@@ -46,12 +48,11 @@ RUN pip3 --no-cache-dir install networkx pathlib pygraphviz
 
 RUN pip3 --no-cache-dir install Yarg==0.1.9 docopt==0.6.2
 
-RUN pip3 --no-cache-dir install nvgpu pipreqs asyncio hangups fbchat mir_eval
+RUN pip3 --no-cache-dir install nvgpu pipreqs asyncio mir_eval
 
 RUN apt-get install -y git
 
 # 
-RUN apt-get install -y python3-venv
 
 # RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
 
