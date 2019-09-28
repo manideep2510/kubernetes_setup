@@ -42,7 +42,7 @@ RUN pip3 --no-cache-dir install dill bleach namedtupled
 
 RUN pip3 --no-cache-dir install PyEMD
 
-RUN pip3 --no-cache-dir install torch torchvision pytorch-transformers seqeval==0.0.5 nltk
+RUN pip3 --no-cache-dir install torch torchvision transformers seqeval==0.0.5 nltk
 
 RUN pip3 --no-cache-dir install networkx pathlib pygraphviz
 
