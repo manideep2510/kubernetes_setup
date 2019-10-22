@@ -48,15 +48,17 @@ RUN pip3 --no-cache-dir install networkx pathlib pygraphviz imgaug
 
 RUN pip3 --no-cache-dir install Yarg==0.1.9 docopt==0.6.2
 
-RUN apt-get install -y python-all-dev python3-all-dev
+#RUN apt-get install -y python-all-dev python3-all-dev
 
-RUN pip3 --no-cache-dir install nvgpu pipreqs asyncio mir_eval jiwer asr-evaluation asrtoolkit SpeechRecognition
+RUN pip3 --no-cache-dir install nvgpu pipreqs asyncio mir_eval jiwer 
+
+#asr-evaluation asrtoolkit SpeechRecognition
 
 RUN apt-get install -y git
 
-RUN apt-get install -y python-pyaudio python3-pyaudio
+#RUN apt-get install -y python-pyaudio python3-pyaudio
 
-RUN pip3 --no-cache-dir install google-cloud-speech
+#RUN pip3 --no-cache-dir install google-cloud-speech
 
 # RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
 
