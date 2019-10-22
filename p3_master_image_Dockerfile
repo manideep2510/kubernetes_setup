@@ -44,7 +44,7 @@ RUN pip3 --no-cache-dir install PyEMD
 
 RUN pip3 --no-cache-dir install torch torchvision transformers seqeval==0.0.5 nltk
 
-RUN pip3 --no-cache-dir install networkx pathlib pygraphviz
+RUN pip3 --no-cache-dir install networkx pathlib pygraphviz imgaug
 
 RUN pip3 --no-cache-dir install Yarg==0.1.9 docopt==0.6.2
 
