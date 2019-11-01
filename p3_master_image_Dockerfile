@@ -58,7 +58,11 @@ RUN pip3 --no-cache-dir install pystoi
 
 #asr-evaluation asrtoolkit SpeechRecognition
 
-RUN apt-get install -y git
+RUN apt-get install -y git nodejs
+
+RUN pip3 --no-cache-dir install pymongo sacred
+
+RUN npm install -g omniboard
 
 #RUN apt-get install -y python-pyaudio python3-pyaudio
 
