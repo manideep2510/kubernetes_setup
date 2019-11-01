@@ -18,7 +18,7 @@ LABEL description="Tensorflow + some other libraries"
 RUN apt-get update
 
 
-RUN apt-get install -y wget vim htop fish datamash graphviz libgraphviz-dev ffmpeg zsh tmux cmake
+RUN apt-get install -y wget vim htop fish datamash graphviz libgraphviz-dev ffmpeg zsh tmux cmake curl
 
 RUN apt-get install -y python3-venv
 
@@ -57,6 +57,8 @@ RUN pip3 --no-cache-dir install https://github.com/ludlows/python-pesq/archive/m
 RUN pip3 --no-cache-dir install pystoi
 
 #asr-evaluation asrtoolkit SpeechRecognition
+
+RUN curl -sL https://deb.nodesource.com/setup_13.x | bash
 
 RUN apt-get install -y git nodejs
 
