@@ -66,6 +66,8 @@ RUN apt-get install -y git nodejs
 
 RUN pip3 --no-cache-dir install pymongo sacred
 
+RUN pip3 --no-cache-dir install moviepy mtcnn
+
 RUN npm install -g omniboard
 
 #RUN apt-get install -y python-pyaudio python3-pyaudio
