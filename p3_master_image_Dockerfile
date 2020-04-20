@@ -56,6 +56,8 @@ RUN pip3 --no-cache-dir install nvgpu pipreqs asyncio mir_eval jiwer cython wand
 
 RUN pip3 --no-cache-dir install https://github.com/ludlows/python-pesq/archive/master.zip
 
+RUN pip3 --no-cache-dir install https://github.com/vBaiCai/python-pesq/archive/master.zip
+
 RUN pip3 --no-cache-dir install pystoi gast==0.2.2
 
 #asr-evaluation asrtoolkit SpeechRecognition
